@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 4;        /* border pixel of windows */
-static const unsigned int gappx     = 12;        /* gaps between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Terminess Nerd Font:size=16" };
-static const char dmenufont[]       = "Terminess Nerd Font:size=16";
+static const char *fonts[]          = { "Terminess Nerd Font:size=14" };
+static const char dmenufont[]       = "Terminess Nerd Font:size=14";
 static const char black[]           = "#101010";
 static const char white[]           = "#ffffff";
 static const char *colors[][3]      = {
@@ -24,9 +24,8 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class instance title tags mask isfloating monitor */
+	{ NULL,  NULL,    NULL, 0,        0,         0, },
 };
 
 /* layout(s) */
