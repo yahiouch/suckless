@@ -9,10 +9,11 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Terminess Nerd Font:size=14" };
 static const char dmenufont[]       = "Terminess Nerd Font:size=14";
 static const char black[]           = "#101010";
-static const char white[]           = "#ffffff";
+static const char white[]           = "#808080";
+static const char grey[]            = "#2a2a2a";
 static const char *colors[][3]      = {
         /*               fg     bg     border */
-        [SchemeNorm] = { white, black, black },
+        [SchemeNorm] = { white, black, grey },
         [SchemeSel]  = { white, black, white },
 };
 
