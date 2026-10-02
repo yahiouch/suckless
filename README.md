@@ -1,6 +1,6 @@
 Personal configuration for some of Suckless's tools
 
-<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/191d3dcf-90fb-43d4-a4f1-249adb996986" />
+<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/04503b2b-80a5-4bba-800a-62aa62256079" />
 
 This is nothing more than a personal config made by a 16-year-old who has a lot of time on his hands. It uses Catppuccin Mocha-style colors, along with QoL patches such as vacant tags, gaps, an underline under active tags, and a simple modification to window management that makes new windows spawn to the side instead of replacing the current one.
 
