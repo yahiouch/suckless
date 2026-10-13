@@ -65,8 +65,10 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function      format        argument */
-        { run_command,  "󰓃 %s | ", "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{if ($3 == \"[MUTED]\") print \"Muted\"; else printf \"%.0f%%\", $2 * 100}'" },
-	{ battery_perc, "  %s%% | ", "BAT0"  },
-        { datetime,     "%s",         "%T"    },
+	/* function     format        argument */
+    { cpu_perc,     "  %s%% | ",  NULL },
+    { ram_perc,     "  %s%% | ",  NULL },
+    { run_command,  "  %s | ",    "wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{if ($3 == \"[MUTED]\") print \"Muted\"; else printf \"%.0f%%\", $2 * 100}'" },
+	{ battery_perc, "  %s%% | ", "BAT0"  },
+    { datetime,     "%s",         "%T"    },
 };

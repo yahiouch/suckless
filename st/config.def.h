@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminess Nerd Font:pixelsize=16";
-static int borderpx = 2;
+static char *font = "Terminess Nerd Font:pixelsize=20:style=Bold:antialias=true";
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -93,35 +93,38 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.85;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#45475a",
-	"#f38ba8",
-	"#a6e3a1",
-	"#f9e2af",
-	"#89b4fa",
-	"#f5c2e7",
-	"#94e2d5",
-	"#bac2de",
+	"#002b36",
+	"#dc322f",
+	"#859900",
+	"#b58900",
+	"#268bd2",
+	"#6c71c4",
+	"#2aa198",
+	"#93a1a1",
 
 	/* 8 bright colors */
-	"#585b70",
-	"#f38ba8",
-	"#a6e3a1",
-	"#f9e2af",
-	"#89b4fa",
-	"#f5c2e7",
-	"#94e2d5",
-	"#a6adc8",
+	"#657b83",
+	"#dc322f",
+	"#859900",
+	"#b58900",
+	"#268bd2",
+	"#6c71c4",
+	"#2aa198",
+	"#fdf6e3",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cdd6f4",
-	"#1e1e2e",
-	"#cdd6f4", /* default foreground colour */
-	"#1e1e2e", /* default background colour */
+	"#93a1a1",
+	"#002b36",
+	"#93a1a1", /* default foreground colour */
+	"#002b36", /* default background colour */
 };
 
 
